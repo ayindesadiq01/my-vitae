@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Raleway:wght@400;500;800&family=Roboto+Slab&family=Signika+Negative:wght@300;400;500&family=Space+Grotesk:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: 'Josefin Sans', sans-serif;
+  /* background: linear-gradient(grey, rgb(44, 43, 43)); */
+  background-color: black;
+  color: white;
+}
+.container {
+ width: 80%;
+ margin: 0% auto;
+ height: 100vh;
+ overflow: hidden;
+ padding: 2em;
+}
+header{
+ display: flex;
+ justify-content: space-between;
+}
+.logo {
+ text-decoration: none;
+ color: white;
+ text-transform: uppercase;
+ font-weight: bold;
+ letter-spacing: 2px;
+ font-size: 1.3em;
+}
+.top {
+ position: relative;
+}
+.joker {
+ position: absolute;
+ width: 40%;
+ top: 50px;
+ left: 650px;
+}
+ul {
+ display: flex;
+}
+ul li {
+ list-style: none;
+ padding-left: 2em;
+}
+ul li a {
+ text-decoration: none;
+ font-weight: 500;
+ color: white;
+ position: relative;
+ word-spacing: 1px;
+}
+li::after {
+ content: '';
+ margin: auto;
+ display: block;
+ width: 0%;
+ height: 2px;
+ background: white;
+ transition: .5s;
+}
+li:hover::after {
+ width: 100%;
+}
+.top {
+ display: flex;
+}
+.left-side {
+ margin-top: 7em;
+}
+.top h1 {
+ font-size: 100px;
+ margin-bottom: .3em;
+}
+.typing {
+ font-size: 70px;
+}
+.top p {
+ font-size: 1.2rem;
+ margin-bottom: 1.5em;
+}
+.about {
+ color: white;
+ text-decoration: none;
+ text-transform: lowercase;
+ background: rgb(218, 95, 218);
+ padding: 10px 15px;
+ border-radius: 5px;
+}
+.fa-solid {
+ font-size: 15px;
+ display:none;
+ transition: .7s;
+ padding-left: 10px;
+}
+.about:hover .fa-solid {
+ display: inline-block;
+ transition:all 1s;
+ /* padding: 10px 30px; */
+}
